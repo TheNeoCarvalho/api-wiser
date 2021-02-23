@@ -19,5 +19,11 @@ import app from './../app'
 
             expect(response.status).toEqual(404)
         })
+
+        test('Deve retornar link expirado', async() => {
+            const response = await request(app)
+            .get('/Q1j7nmYB')
+            expect(response.body).toEqual({ msg: 'Link expired' })
+        })
         
     })
