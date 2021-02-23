@@ -28,7 +28,7 @@
 
 <br>
 
-## DOCKER
+## Docker
 
 ### Iniciando o Postgres no Docker
 
@@ -54,3 +54,11 @@ yarn install
 ```
 yarn start
 ```
+
+## Rodando os testes
+
+```
+yarn test
+```
+
+
