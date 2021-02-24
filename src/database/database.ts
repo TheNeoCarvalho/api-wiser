@@ -2,14 +2,14 @@ import { Sequelize } from 'sequelize'
 require('dotenv').config()
 
 const {
-    POSTGRES_DB,
-    POSTGRES_HOST,
-    POSTGRES_USER,
-    POSTGRES_PASS,
-    POSTGRES_PORT,
+    DATABASE_DB,
+    DATABASE_HOST,
+    DATABASE_USER,
+    DATABASE_PASS,
+    DATABASE_PORT,
     DIALECT,
 } = process.env
 
-const sequelize = new Sequelize(`${DIALECT}://${POSTGRES_USER}:${POSTGRES_PASS}@${POSTGRES_HOST}:${POSTGRES_PORT}/${POSTGRES_DB}`, {dialect: 'postgres'})
+const sequelize = new Sequelize(`${DIALECT}://${DATABASE_USER}:${DATABASE_PASS}@${DATABASE_HOST}:${DATABASE_PORT}/${DATABASE_DB}`, {dialect: 'postgres'})
 
 export default sequelize
