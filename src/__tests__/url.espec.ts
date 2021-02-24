@@ -15,14 +15,14 @@ import app from './../app'
 
         test('Deve retornar status 404', async() => {
             const response = await request(app)
-            .get('/ydgd6RD5')
+            .get('/ydgd6RD5')//code invalid
 
             expect(response.status).toEqual(404)
         })
 
         test('Deve retornar link expirado', async() => {
             const response = await request(app)
-            .get('/Q1j7nmYB')
+            .get('/HPfRFt5y')//code valid
             expect(response.body).toEqual({ msg: 'Link expired' })
         })
         

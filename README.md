@@ -36,6 +36,22 @@
 docker run --name postgresdb -p 5432:5432 -d -e POSTGRES_PASSWORD=postgres -d postgres
 ```
 
+## \*Será necessário acessar o postgres e criar uma base de dados ou usar uma já existente.
+
+<br>
+
+## Altere o nome do arquivo .env-example para .env e altere de acordo com seu banco.
+
+```
+# POSTGRES
+    POSTGRES_HOST=localhost
+    POSTGRES_DB=
+    POSTGRES_PORT=5432
+    POSTGRES_USER=
+    POSTGRES_PASS=
+    DIALECT=postgres
+```
+
 ## Clonando o projeto
 
 ```
@@ -60,5 +76,3 @@ yarn start
 ```
 yarn test
 ```
-
-
