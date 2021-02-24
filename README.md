@@ -44,11 +44,11 @@ docker run --name postgresdb -p 5432:5432 -d -e POSTGRES_PASSWORD=postgres -d po
 
 ```
 # POSTGRES
-    POSTGRES_HOST=localhost
-    POSTGRES_DB=
-    POSTGRES_PORT=5432
-    POSTGRES_USER=
-    POSTGRES_PASS=
+    DATABASE_HOST=localhost
+    DATABASE_DB=
+    DATABASE_PORT=5432
+    DATABASE_USER=
+    DATABASE_PASS=
     DIALECT=postgres
 ```
 
